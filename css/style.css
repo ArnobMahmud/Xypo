@@ -282,3 +282,50 @@ input::placeholder {
   color: #b41584;
   font-weight: 500;
 }
+
+footer {
+}
+
+footer hr {
+  background-color: rgb(228, 227, 227);
+  padding: 1px;
+}
+
+footer h2 {
+  font-size: 18px;
+  color: #f67c92;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+
+footer ul li {
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer .para {
+  padding: 10px;
+  font-size: 18px;
+}
+
+footer img {
+  display: block;
+  max-width: 100px;
+}
+
+.footer-btn {
+  display: block;
+  margin: 10px 0px;
+}
+
+.footer-btn a {
+  font-size: 18px;
+  color: rgb(77, 16, 16);
+  border: 2px solid #f67c92;
+  padding: 10px 20px;
+  display: inline-block;
+}
