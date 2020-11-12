@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+    <!----------======  HEADER STARTS ========---------->
     <header>
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -44,19 +46,19 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#about">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Milestone</a>
+                    <a href="#mile">Milestone</a>
                 </li>
                 <li>
-                    <a href="#">Features</a>
+                    <a href="#fea">Features</a>
                 </li>
                 <li>
-                    <a href="#">Offers</a>
+                    <a href="#ofr">Offers</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#com">Contact</a>
                 </li>
                 <li>
                     <a href="#">Sign Up</a>
@@ -67,12 +69,12 @@
             <img src="images/menu.png" alt="" srcset="">
         </div>
     </header>
+    <!----------======  HEADER ENDS ========---------->
 
-
-
-    <section class="about">
+    <!----------======  ABOUT STARTS ========---------->
+    <section class="about" id="about">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row d-0">
                 <div class="about-img col-xl-6">
                     <img src="images/about.png" alt="" srcset="">
                 </div>
@@ -100,7 +102,10 @@
             </div>
         </div>
     </section>
-    <section class="details">
+    <!----------======  ABOUT ENDS ========---------->
+
+    <!----------======  DETAILS STARTS ========---------->
+    <section class="details" id="mile">
         <div class="container">
             <div class="row text-center details-content">
                 <div class="col-xl-4">
@@ -126,8 +131,10 @@
             </div>
         </div>
     </section>
+    <!----------======  DETAILS ENDS ========---------->
 
-    <section class="course">
+    <!----------======  COURSE STARTS ========---------->
+    <section class="course" id="fea">
         <div class="container">
             <div class="row">
                 <div class="course-content col-xl-6">
@@ -158,8 +165,11 @@
             </div>
         </div>
     </section>
+    <!----------======  COURSE ENDS ========---------->
 
-    <section class="about">
+
+    <!----------======  OFFER STARTS ========---------->
+    <section class="offer" id="ofr">
         <div class="container-fluid">
             <div class="row">
                 <div class="about-img col-xl-6">
@@ -188,17 +198,19 @@
             </div>
         </div>
     </section>
+    <!----------======  OFFER ENDS ========---------->
 
-    <section class="community">
+    <!----------======  COMMUNITY STARTS ========---------->
+    <section class="community" id="com">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
                     <h1>Sign up to join our <br>learning community</h1>
                     <form action="">
                         <form action="">
-                            <input type="text" placeholder="Enter Name">
-                            <input type="email" placeholder="Enter E-mail">
-                            <input type="password" placeholder="Enter Password">
+                            <input type="text" placeholder="Enter Name" required>
+                            <input type="email" placeholder="Enter E-mail" required>
+                            <input type="password" placeholder="Enter Password" required>
                             <div class="community-btn">
                                 <button>Sign Up</button>
                                 <button>Start Free Trial</button>
@@ -215,7 +227,9 @@
             </div>
         </div>
     </section>
+    <!----------======  COMMUNITY ENDS ========---------->
 
+    <!----------======  FOOTER STARTS ========---------->
     <footer>
         <div class="container">
             <hr>
@@ -258,7 +272,7 @@
                 </div>
                 <div class="col-xl-2">
                     <div class="para">
-                            Copyright 2020  Xypo
+                        Copyright 2020 Xypo
                         </p>
                     </div>
                 </div>
@@ -271,6 +285,19 @@
             </div>
         </div>
     </footer>
+
+    <!----------======  FOOTER ENDS ========---------->
+
+    <!----------======  SOCIAL ICONS STARTS ========---------->
+    <div class="social-icons">
+        <a href="#"><img src="images/facebook.png" alt="" srcset=""></a>
+        <a href="#"><img src="images/instagram.png" alt="" srcset=""></a>
+        <a href="#"><img src="images/twitter.png" alt="" srcset=""></a>
+        <a href="#"><img src="images/linkedin.png" alt="" srcset=""></a>
+    </div>
+    <!----------======  SOCIAL ICONS ENDS ========---------->
+
+    <!----------======  JS FILES LINKED ========---------->
     <script src="js/navigation.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

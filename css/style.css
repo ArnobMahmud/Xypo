@@ -7,9 +7,13 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   display: block;
+  color: aqua;
 }
 img {
   max-width: 100%;
@@ -24,9 +28,48 @@ h2,
 h3 {
   color: rgb(54, 48, 48);
 }
+p {
+  color: rgb(102, 99, 99);
+}
 body {
   font-family: "Raleway", sans-serif;
 }
+/* COMMON PROPERTIES */
+
+.line1 {
+  margin-right: auto;
+  background-color: #f67c92;
+  padding: 2px;
+  display: block;
+  width: 12%;
+  margin: 8px 0px;
+}
+.line2 {
+  margin-right: auto;
+  background-color: #f67c92;
+  padding: 2px;
+  display: block;
+  width: 9%;
+  margin: 8px 0px;
+}
+.line3 {
+  margin-right: auto;
+  background-color: #f67c92;
+  padding: 2px;
+  display: block;
+  width: 6%;
+  margin: 8px 0px;
+}
+
+.square {
+  height: 15px;
+  width: 15px;
+  background-color: #f67c92;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* HEADER STARTS */
 header {
   background-image: url(../images/background.png);
   background-position: center;
@@ -57,13 +100,6 @@ header {
   max-width: 400px;
   font-weight: 500;
 }
-.square {
-  height: 15px;
-  width: 15px;
-  background-color: #f67c92;
-  margin: 5px;
-  display: inline-block;
-}
 
 .bttn {
   text-decoration: none;
@@ -76,31 +112,7 @@ header {
   border: 2px solid #f67c92;
   padding: 10px 15px;
   display: inline-block;
-}
-
-.line1 {
-  margin-right: auto;
-  background-color: #f67c92;
-  padding: 2px;
-  display: block;
-  width: 12%;
-  margin: 8px 0px;
-}
-.line2 {
-  margin-right: auto;
-  background-color: #f67c92;
-  padding: 2px;
-  display: block;
-  width: 9%;
-  margin: 8px 0px;
-}
-.line3 {
-  margin-right: auto;
-  background-color: #f67c92;
-  padding: 2px;
-  display: block;
-  width: 6%;
-  margin: 8px 0px;
+  text-decoration: none;
 }
 
 #side-nav {
@@ -133,6 +145,7 @@ nav ul li {
   cursor: pointer;
 }
 
+/* ABOUT STARTS */
 .about-img img {
   max-width: 100%;
 }
@@ -152,29 +165,18 @@ nav ul li {
   padding: 0px 20px;
 }
 
-.line4 {
-  margin-right: auto;
-  background-color: #f67c92;
-  padding: 2px;
-  display: block;
-  width: 30%;
-  margin: 8px 0px;
+.about-btn a {
+  font-size: 19px;
+  color: rgb(77, 16, 16);
+  border: 2px solid #f67c92;
+  padding: 10px 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
 }
-.line5 {
-  margin-right: auto;
-  background-color: #f67c92;
-  padding: 2px;
-  display: block;
-  width: 25%;
-  margin: 8px 0px;
-}
-.line6 {
-  margin-right: auto;
-  background-color: #f67c92;
-  padding: 2px;
-  display: block;
-  width: 20%;
-  margin: 8px 0px;
+
+.about-btn {
+  margin-bottom: 15px;
 }
 
 .about-content h1 {
@@ -187,6 +189,7 @@ nav ul li {
 
 .about-content h3 {
   padding: 10px 0px;
+  font-size: 24px;
 }
 
 h3 span {
@@ -194,6 +197,7 @@ h3 span {
   font-weight: bold;
 }
 
+/* DETAILS STARTS */
 .details {
   padding: 50px 0px;
 }
@@ -215,6 +219,7 @@ h3 span {
   display: inline-block;
 }
 
+/* COURSE STARTS */
 .course {
   padding: 50px 0px;
 }
@@ -241,20 +246,7 @@ h3 span {
   margin-bottom: 15px;
 }
 
-.about-btn a {
-  font-size: 19px;
-  color: rgb(77, 16, 16);
-  border: 2px solid #f67c92;
-  padding: 10px 15px;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.about-btn {
-  margin-bottom: 15px;
-}
-
+/* COMMUNITY STARTS */
 .community {
   padding: 50px 0px;
 }
@@ -283,12 +275,15 @@ input::placeholder {
   font-weight: 500;
 }
 
+/* FOOTER STARTS */
 footer {
+  padding: 30px 0px 20px;
 }
 
 footer hr {
-  background-color: rgb(228, 227, 227);
+  background-color: #f67c9280;
   padding: 1px;
+  margin-bottom: 30px;
 }
 
 footer h2 {
@@ -298,13 +293,11 @@ footer h2 {
   padding: 10px 0px;
 }
 
-footer ul li {
-}
 footer ul li a {
-  text-decoration: none;
   color: black;
   font-size: 15px;
   font-weight: 500;
+  padding: 10px 0px;
 }
 
 footer .para {
@@ -323,9 +316,29 @@ footer img {
 }
 
 .footer-btn a {
+  text-decoration: none;
   font-size: 18px;
-  color: rgb(77, 16, 16);
+  color: rgb(39, 17, 17);
   border: 2px solid #f67c92;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: inline-block;
 }
+
+/* SOCIAL STARTS */
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.social-icons img {
+  display: block;
+  width: 20px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
